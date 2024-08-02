@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  list-style-type: none;
+  background-color: #10898d;
+  justify-content: space-around;
+  padding: 2px;
+  padding-top: 9px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul li a {
+  color: white;
+  font-size: 25px;
+}
+
+.navbar ul li i {
+  font-size: 30px;
+}
+
+.mainpage {
+  background-color: #aad6ec;
+}
+
+.gallery1 img {
+  width: 100%;
+  background-size: contain;
+}
+
+.gallery2 h1 {
+  text-align: center;
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.navbar ul li a {
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 34% 33% 33%;
+}
+
+.container img {
+  background-size: cover;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  padding: 10px;
+}
+
+.card img:hover {
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+  transition: 0.5s ease-in-out;
+}
+
+.footer {
+  width: 100%;
+  height: 18vh;
+  background-color: #10898d;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer h2 {
+  color: white;
+  padding: 10px
+}
+
+.footer p {
+  padding: 5px;
+  color: white;
+}
+
+#icon {
+  font-size: 35px;
+  padding: 5px;
+}
+
+#icon i {
+  margin: 0px 10px;
+}
+
+@media (max-width:1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  ul {
+    padding-top: 9px;
+  }
+
+  ul li a {
+    font-size: 20px;
+  }
+
+  .navbar ul li i {
+    font-size: 25px;
+  }
+
+  .gallery2 h1 {
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  .card {
+    padding: 5px;
+  }
+
+  .footer {
+    height: 20vh;
+  }
+
+  #icon {
+    font-size: 28px;
+  }
+
+}
+
+@media(max-width:768px) {
+  ul li a {
+    font-size: 17px;
+  }
+
+  .navbar ul li i {
+    font-size: 20px;
+  }
+
+  ul {
+    height: 6vh;
+  }
+
+  .gallery2 h1 {
+    font-size: 22px;
+    padding: 4px;
+  }
+
+  .footer h2 {
+    font-size: 20px;
+  }
+
+  #icon {
+    font-size: 23px;
+  }
+
+  .footer p {
+    font-size: 15px;
+  }
+
+  .footer {
+    height: 17.5vh;
+  }
+}
+
+@media(max-width:500px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar ul li i {
+    font-size: 17px;
+  }
+
+  ul li a {
+    font-size: 14px;
+  }
+
+  .gallery2 h1 {
+    font-size: 20px;
+    padding: 3px;
+  }
+
+  .footer h2 {
+    font-size: 17px;
+  }
+
+  #icon {
+    font-size: 18px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+
+  .footer {
+    height: 15.5vh;
+  }
+}
+
+@media(max-width:426px) {
+  .navbar ul li i {
+    font-size: 16px;
+  }
+
+  ul li a {
+    font-size: 13px;
+  }
+
+  .footer h2 {
+    font-size: 16px;
+  }
+
+  .gallery2 h1 {
+    font-size: 19px;
+    padding: 3px;
+  }
+
+  #icon {
+    font-size: 17px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .footer {
+    height: 15vh;
+  }
+}
+
+@media(max-width:376px) {
+  .navbar ul li i {
+    font-size: 15px;
+  }
+
+  ul li a {
+    font-size: 12px;
+  }
+
+  .footer h2 {
+    font-size: 15px;
+  }
+
+  .gallery2 h1 {
+    font-size: 18px;
+    padding: 2px;
+  }
+
+  .card {
+    padding: 3px;
+  }
+
+  #icon {
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 11px;
+  }
+
+  .footer {
+    height: 14.5vh;
+  }
+}
+
+@media(max-width:320px) {
+  .navbar ul li i {
+    font-size: 13px;
+  }
+
+  ul li a {
+    font-size: 11px;
+  }
+
+  ul {
+    height: 5vh;
+    font-size: 12px;
+  }
+
+  .gallery2 h1 {
+    font-size: 15px;
+    padding: 2px;
+  }
+
+  .card {
+    padding: 2px;
+  }
+
+  .footer h2 {
+    font-size: 12px;
+  }
+
+  #icon {
+    font-size: 13px;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+
+  .footer {
+    height: 13.1vh;
+  }
+}
+
+@media(max-width:280px) {
+  .navbar ul li i {
+    font-size: 12px;
+  }
+
+  ul li a {
+    font-size: 10px;
+  }
+
+  ul {
+    height: 4.5vh;
+    font-size: 2px;
+  }
+
+  .gallery2 h1 {
+    font-size: 13px;
+    padding: 1px;
+  }
+
+  .footer h2 {
+    font-size: 10px;
+  }
+
+  #icon {
+    font-size: 12px;
+  }
+
+  .footer p {
+    font-size: 9px;
+  }
+
+  .footer {
+    height: 12.2vh;
+  }
+}
+
+@media(max-width:260px) {
+  ul li a {
+    font-size: 9px;
+  }
+
+  .navbar ul li i {
+    font-size: 11px;
+  }
+
+  ul {
+    height: 4.2vh;
+    font-size: 2px;
+  }
+
+  .gallery2 h1 {
+    font-size: 10px;
+    padding: 1px;
+  }
+
+  .card {
+    padding: 1px;
+  }
+
+  #icon {
+    font-size: 10px;
+  }
+
+  .footer h2 {
+    font-size: 9px;
+  }
+
+  .footer p {
+    font-size: 8px;
+  }
+
+  .footer {
+    height: 11.5vh;
+  }
+}
